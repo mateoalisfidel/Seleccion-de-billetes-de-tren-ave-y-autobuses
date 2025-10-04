@@ -1,69 +1,64 @@
-Web Scraping para Comparacion de Precios de Transporte
-Descripcion del Proyecto
-Este proyecto es una herramienta de web scraping desarrollada en Python que permite comparar precios de billetes de transporte en tiempo real. La aplicacion consulta automaticamente las paginas web de las principales companias de transporte en Espana para encontrar las mejores opciones de viaje para el usuario.
+# Web Scraping para Comparación de Precios de Transporte
 
-Objetivo Principal
-Facilitar la busqueda y comparacion de precios de billetes de tren (AVE) y autobus, encontrando automaticamente las opciones mas economicas sin necesidad de consultar manualmente multiples webs.
+## Objetivo
+El objetivo de este trabajo es realizar **web scraping** en las páginas web de las principales compañías de transporte en España para **comparar precios de billetes** de tren y autobús, encontrando automáticamente las opciones más económicas. Esto permite:
 
-Video Demostrativo
-Ver demostracion completa del proyecto:
-https://drive.google.com/file/d/15yJuJ9hOED4ln7LmXZ_exbXp-qqb2pz4/view
+- Consultar múltiples compañías simultáneamente  
+- Identificar el viaje más barato de ida y vuelta  
+- Comparar duraciones y horarios entre diferentes opciones  
+- Proporcionar una interfaz intuitiva para la búsqueda de viajes  
 
-El video muestra el funcionamiento integral del sistema:
+Además, se implementa un sistema flexible que permite al usuario **consultar ambos medios de transporte** en la misma sesión, facilitando la toma de decisiones sobre el transporte más conveniente.
 
-Interfaz de usuario interactiva
+---
 
-Proceso de web scraping en tiempo real
+## Datos
+- **Fuentes de datos**: Páginas web oficiales de RENFE, OUIGO y ALSA  
+- **Información extraída**: Precios, horarios, duración de trayectos, ciudades de origen y destino  
+- **Formato de salida**: Comparativa de precios y opciones de viaje en tiempo real  
 
-Comparacion automatica entre RENFE, OUIGO y ALSA
+---
 
-Presentacion de resultados detallados
+## Metodología
+1. **Automatización del navegador**: Configuración de Selenium WebDriver  
+2. **Extracción de datos**: Web scraping de las páginas web objetivo  
+3. **Procesamiento de información**: Limpieza y estructuración de los datos obtenidos  
+4. **Análisis comparativo**: Identificación del viaje más económico  
+5. **Presentación de resultados**: Interfaz de usuario interactiva  
 
-Flujo completo de busqueda y comparacion
+---
 
-Autores
-Mateo Alis
+## Resultados
+- Sistema funcional de comparación de precios en tiempo real  
+- Identificación automática de las opciones más económicas  
+- Interfaz intuitiva para la entrada de parámetros de búsqueda  
+- Flexibilidad para consultar trenes y autobuses en la misma sesión  
+- Ahorro de tiempo en la búsqueda manual de billetes  
 
-Manuel Caballero
+---
 
-Vicente Llacer
+## Tecnologías
+- **Lenguajes y herramientas**: Python, Jupyter Notebook  
+- **Librerías principales utilizadas en Python**:  
+  - **Web scraping**: Selenium, WebDriver Manager  
+  - **Procesamiento de datos**: Pandas  
+  - **Entorno de desarrollo**: Jupyter  
+- **Áreas de interés y práctica**: Web Scraping, Automatización, Procesamiento de Datos, Interfaz de Usuario  
 
-Caracteristicas Principales
-Busqueda Multiplataforma
-Consulta simultanea en RENFE (trenes/AVE)
+---
 
-Consulta simultanea en OUIGO (trenes)
+## Cómo ejecutar
+1. Abrir los archivos `.ipynb` en Jupyter Notebook  
+2. Instalar las librerías necesarias (`requirements.txt`)  
+3. Ejecutar el notebook principal: `1_TRABAJO_FINAL.ipynb`  
+4. Seguir las instrucciones interactivas para realizar búsquedas  
 
-Consulta simultanea en ALSA (autobuses)
+---
 
-Optimizacion de Precios
-Identificacion automatica del viaje mas economico
-
-Comparacion de precios de ida y vuelta
-
-Analisis de relacion calidad-precio
-
-Informacion Detallada
-Precios actualizados en tiempo real
-
-Duracion exacta de los trayectos
-
-Horarios de salida y llegada
-
-Compania operadora del servicio
-
-Flexibilidad Total
-Eleccion entre tren o autobus como transporte principal
-
-Opcion de consultar el otro medio de transporte posteriormente
-
-Interfaz intuitiva y facil de usar
-
-Tecnologias Utilizadas
-Python 3.7+ - Lenguaje de programacion principal
-
-Jupyter Notebook - Entorno de desarrollo y ejecucion
-
-Selenium WebDriver - Automatizacion del navegador para web scraping
-
-WebDriver Manager - Gestion automatica de drivers del navegador
+## Estructura del proyecto
+- `notebooks/1_TRABAJO_FINAL.ipynb` - Notebook principal con la interfaz de usuario  
+- `notebooks/2_DEFINITIVO_RENFE.ipynb` - Scraping específico para RENFE  
+- `notebooks/3_DEFINITIVO_OUIGO.ipynb` - Scraping específico para OUIGO  
+- `notebooks/4_DEFINITIVO_ALSA.ipynb` - Scraping específico para ALSA  
+- `docs/` - Documentación y presentación del proyecto  
+- `requirements.txt` - Dependencias del proyecto
